@@ -1,0 +1,39 @@
+<div class="overview-wrapper portfolio-wrapper">
+    <div class="overview portfolio row">
+        <div>
+            <div class="header">Portfolio</div>
+        </div>
+        <div class="row">
+            <div class="description col-xs-12" ng-repeat="house in data">
+                <div class="row" style="margin-bottom: 10px">
+                    <div style="width:280px">
+                        <div class="col-xs-5" style="padding-left: 30px">
+                            <img src="../../../images/t.png" style="width: 60px;">
+                        </div>
+                        <div class="col-xs-7 house">
+                            <div class="name">
+                                {{house.name}}
+                            </div>
+                            <div class="address">
+                                {{house.address}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" style="padding-bottom: 10px">
+                    {{house.description}}
+                </div>
+                <div class="images row" style="">
+                    <div class="image-wrapper col-xs-2" ng-repeat="item in house.images">
+                            <div class="image">
+
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <div class="divider" ng-hide="$index === 1"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,69 @@
+.overview-wrapper {
+    width: 100%;
+    .overview {
+        box-shadow: 1px 1px 4px #999999;
+        background: white;
+        width: 100%;
+        color: @my-grey;
+        border: 1px solid @my-grey;
+        margin-top: 16px;
+        .header {
+            color: @my-grey-dark;
+            border-bottom: 1px solid @my-grey;
+            padding: 5px 0 5px 15px;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .description {
+            padding: 8px 15px;
+            border-bottom: 1px solid @my-grey;
+            .sub-header {
+                color: @my-grey-dark;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .list {
+                padding-top: 5px;
+                padding-bottom: 30px;
+                .item {
+                    font-size: 13px;
+                    margin-right: 25px;
+                    display: inline-block;
+                }
+                h4 {
+                    color: @my-grey-dark;
+                    margin-bottom: 2px;
+                }
+            }
+            .content {
+                padding-top: 5px;
+            }
+        }
+        .second {
+            padding-bottom: 45px;
+        }
+        .third {
+            border-bottom: none;
+            .list {
+                div {
+                    text-align: center;
+                    span {
+                        color: @my-grey-dark;
+                    }
+                }
+                .inactive {
+                    span{
+                        color: @my-grey-light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.green-tick{
+        padding: 1px 0px 1px 3px;
+    background: #33cc66;
+    color: white;
+    border-radius: 40px;
+}

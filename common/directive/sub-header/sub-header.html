@@ -1,0 +1,9 @@
+<div class="sub-header-wrapper">
+
+    <div class="sub-header row">
+        <div ng-repeat="header in headerList" ng-click="onSelect(header.name)" class="header-item {{header.active ? 'active' : ''}}">
+            <div class="border" ng-show="header.active"></div>
+            {{header.name}}</div>
+    </div>
+
+</div>

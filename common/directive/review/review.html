@@ -1,0 +1,32 @@
+<div class="overview-wrapper review-wrapper">
+    <div class="overview review row">
+        <div>
+            <div class="header">
+                Reviews
+                <div class="write-review">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    Add a review
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="col-xs-6 wrapper" ng-repeat="review in reviews">
+            <div class="name">
+                {{review.name}}
+            </div>
+            <div class="rating">
+                <i class="fa fa-star fa-lg" style="color:#ffad3d" aria-hidden="true"></i>
+                <span style="font-weight:600">&nbsp;{{review.rating}}</span>
+            </div>
+            <div class="comment">
+                {{review.comment}}
+            </div>
+            <br>
+        </div>
+        <div class="row no-review-content" ng-show="!reviews.length">
+            No reviews yet to show
+        </div>
+    </div>
+
+</div>
